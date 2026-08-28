@@ -1,0 +1,15 @@
+# Preserve the byte-exact LF form supplied by the contest CoreMark archive.
+software/third_party/coremark/core_list_join.c text eol=lf
+software/third_party/coremark/core_main.c text eol=lf
+software/third_party/coremark/core_matrix.c text eol=lf
+software/third_party/coremark/core_state.c text eol=lf
+software/third_party/coremark/core_util.c text eol=lf
+software/third_party/coremark/coremark.h text eol=lf
+software/third_party/coremark/jyd_supplied_port_20260819/* text eol=lf
+software/third_party/coremark/JYD_SOURCE_SHA256_20260819.txt text eol=lf
+*.bit -text
+*.dcp -text
+*.bin -text
+*.elf -text
+*.docx -text
+*.pdf -text

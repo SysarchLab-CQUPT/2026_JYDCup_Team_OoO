@@ -1,0 +1,17 @@
+/build/
+/software/build/
+/reports/
+/output/
+/tmp/
+/xsim.dir/
+/.Xil/
+*.jou
+*.log
+*.pb
+*.wdb
+*.str
+*.zip
+dfx_runtime.txt
+clockInfo.txt
+tight_setup_hold_pins.txt
+~$*.docx

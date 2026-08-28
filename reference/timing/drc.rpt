@@ -1,0 +1,130 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2025.2 (win64) Build 6299465 Fri Nov 14 19:35:11 GMT 2025
+| Date         : Wed Aug 19 10:56:03 2026
+| Host         : road-to-AGI running 64-bit major release  (build 9200)
+| Command      : report_drc -file C:/Users/uchiha_sasuke/Documents/CPU/study_initial/jyd2025_ooo_soc_v23/reports/impl/coremark18000_20260819/drc.rpt
+| Design       : jyd_soc_top
+| Device       : xc7k325tffg900-2
+| Speed File   : -2
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_jyd_soc_top_final_route_wns_p0001_20260815
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max checks: <unlimited>
+             Checks found: 18
++-------------+----------+---------------------------------+--------+
+| Rule        | Severity | Description                     | Checks |
++-------------+----------+---------------------------------+--------+
+| DPIP-1      | Warning  | Input pipelining                | 8      |
+| DPOP-1      | Warning  | PREG Output pipelining          | 4      |
+| DPOP-2      | Warning  | MREG Output pipelining          | 4      |
+| PLBUFGOPT-1 | Warning  | Non-Optimal connections to BUFG | 1      |
+| RTSTAT-10   | Warning  | No routable loads               | 1      |
++-------------+----------+---------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hh_q_reg0 input u_soc/u_core/u_mul_partial_products/product_hh_q_reg0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hh_q_reg0 input u_soc/u_core/u_mul_partial_products/product_hh_q_reg0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hl_q_reg0 input u_soc/u_core/u_mul_partial_products/product_hl_q_reg0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hl_q_reg0 input u_soc/u_core/u_mul_partial_products/product_hl_q_reg0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_lh_q_reg0 input u_soc/u_core/u_mul_partial_products/product_lh_q_reg0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_lh_q_reg0 input u_soc/u_core/u_mul_partial_products/product_lh_q_reg0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_ll_q_reg0 input u_soc/u_core/u_mul_partial_products/product_ll_q_reg0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_ll_q_reg0 input u_soc/u_core/u_mul_partial_products/product_ll_q_reg0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hh_q_reg0 output u_soc/u_core/u_mul_partial_products/product_hh_q_reg0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hl_q_reg0 output u_soc/u_core/u_mul_partial_products/product_hl_q_reg0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_lh_q_reg0 output u_soc/u_core/u_mul_partial_products/product_lh_q_reg0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_ll_q_reg0 output u_soc/u_core/u_mul_partial_products/product_ll_q_reg0/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hh_q_reg0 multiplier stage u_soc/u_core/u_mul_partial_products/product_hh_q_reg0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_hl_q_reg0 multiplier stage u_soc/u_core/u_mul_partial_products/product_hl_q_reg0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_lh_q_reg0 multiplier stage u_soc/u_core/u_mul_partial_products/product_lh_q_reg0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP u_soc/u_core/u_mul_partial_products/product_ll_q_reg0 multiplier stage u_soc/u_core/u_mul_partial_products/product_ll_q_reg0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+PLBUFGOPT-1#1 Warning
+Non-Optimal connections to BUFG  
+A non-muxed BUFG u_pll/inst/clkout2_buf is driven by another global buffer u_pll/inst/clkout2_buf_replica. Remove non-muxed BUFG if it is not desired
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+2 net(s) have no routable loads. The problem bus(es) and/or net(s) are u_soc/u_core/csr_trap_pc_q[0], u_soc/u_core/csr_trap_pc_q[1].
+Related violations: <none>
+
+
